@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Internacional de Psicotrauma y Salud</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <style>
+    /* body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        } */
+    #inicio {
+      margin-top: 9vw;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 70vh;
+      overflow: hidden;
+      background-color: white;
+    }
+
+    .carousel-slide {
+      display: flex;
+      width: 200%;
+      height: 100%;
+      transition: transform 0.5s ease;
+      background-color: aquamarine;
+    }
+
+    .carousel-slide .slide {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .imagen1{
+      order: 2;
+      margin-left: auto;
+    }
+    .text{
+      order: 1;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: relative;
+      
+    }
+
+    .imagen {
+      height: auto;
+      margin: 0;
+    }
+
+    .slide .text {
+      width: 40%;
+      text-align: justify;
+      display: flex;
+      padding: 20px;
+      text-align: justify;
+      font-family: "Montserrat", sans-serif !important;
+      font-size: 1.1rem;
+      font-weight: 400;
+      align-self: center;
+      opacity: 0;
+      transition: opacity 2s ease-in;
+      font-variant: small-caps;
+      margin: 0 25px 0 20px;
+      color: black;
+    }
+
+    .slide.active .text {
+      opacity: 1;
+    }
+
+    .indicators {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .indicator {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      background-color: white;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .indicator.active {
+      background-color: gray !important;
+    }
+
+    #veronica {
+      background-color: #d47120;
+      margin: 0;
+      border-radius: 0;
+
+    }
+
+    .vero {
+      padding-left: 0;
+      /* border: 1px solid red; */
+
+    }
+
+    .vero img {
+      margin-top: 1vw;
+      width: 40vw;
+      /* border: 2px solid yellow; */
+
+    }
+
+    h3 {
+      font-weight: 700;
+    }
+
+    .text {
+      width: 50%;
+      color: black;
+      /* display: flex; */
+      margin-top: 5vw;
+      text-align: center;
+      font-family: "Barlow", sans-serif;
+      font-size: 1rem;
+      font-variant: small-caps;
+      /* text-shadow: 2px 0 0 black ; */
+      font-weight: 700;
+      /* border: 2px solid red; */
+    }
+
+    .tarjeta {
+      width: 30vw;
+      height: 35vw;
+      margin-left: 10vw;
+    }
+
+    .tarjeta .img {
+      width: 100%;
+      padding: 0;
+
+    }
+
+    #prof {
+      background-color: #333;
+      padding: 0 !important;
+
+    }
+
+    .prof {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      color: white;
+      padding: 6vw;
+      padding-bottom: 0 !important;
+    }
+
+    .cur img {
+      width: 60%;
+      height: 30vw;
+      padding: 0;
+      margin: 0;
+    }
+
+    .staff {
+      font-variant: small-caps;
+      font-size: 1.2rem;
+      text-align: start;
+    }
+
+    .logof img {
+      width: 10vw;
+      height: auto;
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+
+    /* Ef fade - in*/
+    .fade-in {
+      opacity: 0;
+      animation: fade-in 2s forwards;
+    }
+
+    @keyframes fade-in {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg fade-in fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo trauma.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">Nosotros</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="LineaD.html" class="dropdown-item">Linea de Investigacion</a>
+                </li>
+                <li>
+                  <a href="DraVMolina.html" class="dropdown-item">Dra. Veronica Molina</a>
+                </li>
+                <li>
+                  <a href="staf.html" class="dropdown-item">Nuestro Staff</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Formacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Linea de Investigacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Asistencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recursos Gratuitos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+
+      <div class="carousel">
+        <div class="carousel-slide fade-in">
+          <div class="slide">
+            <div class="imagen">
+              <img src="img/DraVeronicaMolna/veronicamolina.jpg" alt="Image 2">
+            </div>
+            <div class="text fade-in" id="pres"></div>
+            <div id="previa" style="display: none;">El trauma está en la base de la mayoría de nuestros trastornos del
+              cuerpo y la
+              mente,
+              distorsiona nuestra visión de la realidad y nos deja atrapados en bloqueos y disociaciones.
+            </div>
+          </div>
+          <div class="slide">
+            <div class="text">El Trauma está presente en nuestra forma de mirar el mundo, pensar
+              la
+              realidad, sentirnos a nosotros mismos, relacionarnos, permitirnos
+              avanzar en proyectos o disfrutar de la vida con mayor resiliencia.
+            </div>
+            <div class="imagen1">
+              <img class="" src="img/DraVeronicaMolna/veronicamolina2.jpg" alt="Image 1">
+            </div>
+          </div>
+        </div>
+        <div class="indicators">
+          <span class="indicator" onclick="currentSlide(0)"></span>
+          <span class="indicator" onclick="currentSlide(1)"></span>
+
+        </div>
+      </div>
+
+    </section>
+    <section id="veronica">
+      <div class="row">
+        <div class="col-12 col-md-6 vero">
+          <img class="" src="img/DraVeronicaMolna/dra-veronica-molina-2.jpg" alt="">
+        </div>
+        <div class="col-12 col-md-6 text">
+          <h3>Dra. Verónica Molina</h3>
+
+          <p>Médica Cardióloga. Psicoterapeuta integrativa
+            Docente, investigadora. Fundadora de ICFT espacio de asistencia, formación e investigación en psicoterapia
+            y trauma.
+            Miembro de AASM; Federación Mundial de Salud Mental; Sociedad Argentina de Medicina del Stress y Fundación
+            de Constelaciones Familiares.
+
+          </p>
+          <a href="DraVMolina.html" class="btn">Ver mas</a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="cursos">
+      <div class="row ms-4 me-4">
+        <div class="col-12 col-md-6 curso">
+          <div class="row tarjeta">
+            <p>Posgrado en Salud</p>
+            <div class="col-12 m-0 p-0">
+              <a href="posgrado.html">
+                <img src="img/cursofreepik.png" alt="" class="img">
+
+              </a>
+              <p class="bg-dark text-white">
+                Nuestro posgrado en salud consta de blablabla bblalballa</p>
+              <a href="posgrado.html" class="btn">Ver mas</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 curso">
+          <div class="row tarjeta">
+            <p>Abordaje Trifocal del Trauma</p>
+            <div class="col-12 m-0 p-0">
+              <a href="#">
+                <img src="img/cursofreepik1.png" alt="" class="img">
+              </a>
+              <p class="bg-dark text-white">
+                Nuestro posgrado en salud consta de blablabla bblalballa</p>
+              <a href="posgrado.html" class="btn">Ver mas</a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="prof">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <p id="text" class="prof fade-in">Comprender el trauma no se trata sólo de identificar problemas sino también
+            de ayudar a las personas a
+            desarrollar la resiliencia y superar experiencias traumáticas.
+            Esto es relevante para todas las personas que trabajan, en diversas áreas, con individuos y comunidades.
+            Acceder a estos conocimientos en profundidad resulta esencial para la tarea de diversas profesiones
+            logrando abordar adecuadamente el diagnóstico y acompañamiento a personas en cada ámbito de trabajo</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <img class="cur w-100 d-block p-0 m-0" src="img/curso.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section id="equipo">
+      <div class="row">
+        <div class="col-12">
+          <p class="fade-in staff">Contamos con un equipo con experiencia y profesionalismo, continuamente capacitado,
+            con un
+            enfoque integral que se compromete con un acompañamiento respetuoso, responsable y ético</p>
+          <a href="staf.html" class="btn">Conocenos</a>
+        </div>
+      </div>
+    </section>
+    <section id="contacto">
+      <!-- Formulario de contacto -->
+      <div class="row">
+        <div class="col-12 contacto">
+          <p>Mas información &emsp;<a href="form.html" target="_blank" class="btn">Contacto</a></p>
+        </div>
+      </div>
+
+    </section>
+    <!-- <section id="galeria">
+      Galería de imágenes o proyectos destacados
+    </section> -->
+  </main>
+
+  <footer class="fix-bottom">
+    <div class="row m-0">
+      <div class="col-4 text-start">
+        <i class="fa-solid fa-house"></i>&ensp; Blanco Encalada 2138<br>Ciudad Autónoma de Buenos Aires<br>
+        <i class="fa-solid fa-phone"></i>&ensp;Consultas +54 9 11 2677-5593<br>
+        <i class="fa-brands fa-instagram"></i>&ensp;<i class="fa-brands fa-facebook"></i>&ensp;<i
+          class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="col-4 mb-0">
+        <span class="text-center ">&copy 2024 - Todos los derechos reservados</span>
+      </div>
+      <div class="col-4 logof">
+        <img src="img/logo trauma blanco.png" alt="">
+      </div>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const textToType = document.getElementById('previa').textContent;
+      const typedContent = document.getElementById('pres');
+      let index = 0;
+      const typingSpeed = 60; // Velocidad de escritura en milisegundos
+
+      function type() {
+        if (index < textToType.length) {
+          typedContent.textContent += textToType.charAt(index);
+          index++;
+          requestAnimationFrame(type);
+        }
+      }
+
+      function startTyping() {
+        setTimeout(type, typingSpeed);
+      }
+
+      startTyping();
+    });
+  </script>
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const indicators = document.querySelectorAll('.indicator');
+
+    function showSlide(index) {
+      const slideWidth = slides[0].clientWidth;
+      document.querySelector('.carousel-slide').style.transform = `translateX(-${index * slideWidth}px)`;
+      indicators.forEach(indicator => indicator.classList.remove('active'));
+      indicators[index].classList.add('active');
+
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[index].classList.add('active');
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    function currentSlide(index) {
+      currentIndex = index;
+      showSlide(currentIndex);
+    }
+
+    setInterval(nextSlide, 12000);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      showSlide(currentIndex);
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const carousel = document.querySelector('.carousel');
+      const prevButton = document.querySelector('.carousel-button.prev');
+      const nextButton = document.querySelector('.carousel-button.next');
+      const images = document.querySelectorAll('.carousel img');
+      const indicators = document.querySelectorAll('.carousel-indicators button');
+      let currentIndex = 0;
+      let autoSlideInterval;
+
+      function updateCarousel() {
+        const image = images[currentIndex];
+        carousel.scrollTo({
+          left: image.offsetLeft - (carousel.offsetWidth - image.offsetWidth) / 2,
+          behavior: 'smooth'
+        });
+        indicators.forEach((indicator, index) => {
+          indicator.classList.toggle('active', index === currentIndex);
+        });
+      }
+
+      function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+          currentIndex = (currentIndex + 1) % images.length;
+          updateCarousel();
+        }, 5000);
+      }
+
+      function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+      }
+
+      prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateCarousel();
+      });
+
+      nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel();
+      });
+
+      indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+          currentIndex = index;
+          updateCarousel();
+        });
+      });
+
+      carousel.addEventListener('mouseenter', stopAutoSlide);
+      carousel.addEventListener('mouseleave', startAutoSlide);
+
+      updateCarousel();
+      startAutoSlide();
+    });
+  </script>
+  <script>
+    ScrollReveal().reveal('#cursos', { duration: 1000, origin: 'bottom', distance: '50px' })
+    ScrollReveal().reveal('#carousel', { duration: 1000, origin: 'bottom', distance: '50px' })
+    ScrollReveal().reveal('#contacto', { duration: 1000, origin: 'bottom', distance: '50px' })
+    ScrollReveal().reveal('#text', { duration: 1500, origin: 'left', distance: '100px' })
+
+  </script>
+</body>
+
+</html>

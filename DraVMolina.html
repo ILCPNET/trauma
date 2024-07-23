@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Internacional de Psicotrauma y Salud</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        /* #veronica {
+            background-color: #ed6d4a;
+        } */
+
+
+
+        .vero {
+            padding-left: 0;
+            /* border: 1px solid red; */
+
+        }
+
+        .vero img {
+            padding-top: 6vw;
+            width: 40vw;
+            /* border: 2px solid yellow; */
+
+        }
+
+        h3 {
+            font-weight: 700;
+        }
+
+        .text {
+            width: 50%;
+            color: black;
+            /* display: flex; */
+            margin-top: 5vw;
+            text-align: center;
+            font-family: "Barlow", sans-serif;
+            font-size: 1rem;
+            font-variant: small-caps;
+            /* text-shadow: 2px 0 0 black ; */
+            font-weight: 700;
+            /* border: 2px solid red; */
+        }
+
+        #staff {
+            margin: 0 10vw 0 10vw;
+            background-color: inherit;
+        }
+
+        .staff {
+            font-variant: small-caps;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .logof img {
+            width: 10vw;
+            height: auto;
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+
+        .descripcion {
+            text-align: justify;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+
+        h4 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .card {
+            background-color: #45C4B0;
+            margin: 5px;
+            max-width: 25vw;
+        }
+
+        #veronica {
+            margin-top: 10vw;
+            background-color: #45C4B0;
+
+        }
+
+        #veronica ul li {
+            text-align: justify;
+            margin: 5px;
+        }
+
+        /* Ef fade - in*/
+        .fade-in {
+            opacity: 0;
+            animation: fade-in 2s forwards;
+        }
+
+        .float-image {
+            float: right;
+            margin: 15px 15px 5px 5px;
+            max-width: 40vw;
+        }
+
+
+        /* .navbar a {
+            color: white;
+        } */
+
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fade-in fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/logo trauma.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="#">Nosotros</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="LineaD.html" class="dropdown-item">Linea de Investigacion</a>
+                                </li>
+                                <li>
+                                    <a href="DraVMolina.html" class="dropdown-item active">Dra. Veronica Molina</a>
+                                </li>
+                                <li>
+                                    <a href="staf.html" class="dropdown-item">Nuestro Staff</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Formacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Linea de Investigacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Asistencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recursos Gratuitos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Testimonios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="veronica">
+            <div class="row">
+                <div class="col-12 col-md-6 vero">
+                    <img class="ms-3" src="img/DraVeronicaMolna/5d72b2a6f1600_0.jpg" alt="">
+                </div>
+                <div class="col-12 col-md-6">
+                    <h2 class="text-end mb-0 me-3">Dra. Veronica Molina</h2>
+                    <h4 class="text-end me-3">Formación Académica</h4>
+                    <ul class="text-start">
+                        <li>Médica, psicoterapeuta integrativa, especialista en terapia familiar y psicotrauma.</li>
+                        <li>Medica recibida en 1999 en UCC.</li>
+                        <li>Residencia en medicina interna 2000- 2001 Clínica Caraffa, Córdoba. Residencia completa
+                            en Cardiología UBA SAC del Hospital Alemán de Buenos Aires (2001-2004).</li>
+                        <li>Realizó estudios de Medicina Psicosomática en la Universidad de Aachen (RWTH-Alemania) en
+                            1997-1998 y 2002.</li>
+                        <li>Diplomada Universitaria en Psicología de la Emergencia (Asoc Argentina de Salud Mental
+                            UNC).</li>
+                        <li>Diplomada Universitaria en Terapia sistémica y de pareja (Asociación Argentina de Salud
+                            Mental UNT).</li>
+                        <li>Formación completa en Experiencia Somática de Peter Levine y Teoría Polivagal (Asoc
+                            Brasilera de Trauma Somatic Expieriencing Trauma Institute). </li>
+                        <li>Formada en Terapia Gestalt en la visión integrativa de Claudio Naranjo y los programas
+                            SAT.</li>
+                        <li>Formada en Teoría del Apego desde una perspectiva Psicoanalítica.</li>
+                        <li>Formada en Trauma de desarrollo desde un enfoque somático y psicodinámico.</li>
+                        <li>Formada en APA en Psicosomática Psicoanalítica (2008).</li>
+                        <li>Actualmente cursando el 3 año de formación y supervisión como Facilitador en grupos Trabajo
+                            de Trauma Colectivo con Thomas Hübl reconocido por la Witten/Herdecke
+                            Universität(USA/ALEMANIA)</li>
+                        <li>Especializada en el abordaje sistémico según Bert Hellinger 2006- 2008 (Centro Bert
+                            Hellinger Argentina).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12  ">
+                    <h4 class="text-start ms-2">Actividad académica, clínica y de investigación</h4>
+                    <img class="float-image m-3" src="img/DraVeronicaMolna/dra-veronica-molina-3.jpg" alt="">
+                    <ul class="text-start">
+                        <li>
+                            Trabajo de investigación sobre trauma transgeneracional, genocidios no reconocidos y sus
+                            huellas en los descendientes seleccionados por CLACSO 2023-2025. Colaboración
+                            interdisciplinaria en curso.
+
+                        </li>
+                        <li>Desde 2014 brinda seminarios de capacitación sobre Trauma a terapeutas, psicólogos y médicos
+                            y a la comunidad en general.
+                        </li>
+                        <li> Colaboro con el Ministerio de Salud de la Ciudad de Buenos Aires capacitando a los equipos
+                            de salud Mental en el abordaje somático del trauma durante 2020.
+                        </li>
+                        <li>Dirigió y coordino grupos de escucha y prevención del burn out y trauma vicario para los
+                            trabajadores de la salud en la pandemia durante 2020 y 2021 en coordinación con el
+                            Ministerio de Salud de GCBA.
+                        </li>
+                        <li>Anfitriona y organizadora de Jornadas Internacionales de Salud, Síntomas y Trauma 2020 (con
+                            la participación de expertos en el área de Salud y Trauma de Argentina, Alemania y Brasil).
+                        </li>
+                        <li>Participo en la cumbre de trauma colectivo 2021 como expositora en línea.
+                        </li>
+                        <li>Participo en la cumbre Española de Trauma 2022 y 2023 sobre trauma de desarrollo y trauma
+                            en adolescencias.
+                        </li>
+                        <li>Participa anualmente en congresos en Argentina (APSA Y AASM) presentando el trabajo
+                            sistémico y el abordaje del trauma en ámbitos académicos.
+                        </li>
+                        <li>Supervisora y conferencista, dirige el Instituto de Constelaciones Familiares y Abordaje del
+                            Trauma, espacio de asistencia, docencia e investigación en Buenos Aires/Argentina.
+                        </li>
+                        <li>Directora de los siguientes Diplomados y Especializaciones • Diplomado Internacional en
+                            Constelaciones Familiares Integrativas con orientación en Trauma Trifocal.
+                        </li>
+                        <li>Especialización Internacional en Terapia Trifocal del Trauma.
+                        </li>
+                        <li> Especialización en Abordaje Integrativo y Sistémico de la Salud.
+                        </li>
+                        <li>Miembro de la Fundación de Constelaciones Familiares de Argentina y de su Consejo Académico.
+                        </li>
+                        <li>Miembro de la Asociación Española de Constelaciones Familiares.
+                        </li>
+                        <li>Miembro de la Asociación Argentina de Salud Mental y Federación Mundial de Salud Mental.
+                        </li>
+                        <li> Miembro del capítulo de Trauma en la AASM. • Miembro de la Sociedad Argentina de Medicina
+                            del Stress</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+        </section>
+        <!-- <section id="staff">
+            <div class="staff">
+                <div class="row">
+                    <div class="col-4 card">
+                        <div class="row">
+                            <h4> Dra. Alejandra Alanis</h4>
+                        </div>
+                        <div class="row">
+                            <img src="img/Staff/ALEJANDRAALANIS.png" alt="">
+                        </div>
+                        <div class="row descripcion">
+                            <p>Cursó medicina en la UBA. Especializada en Trauma Individual, Sistémico y Social .
+                                Posgraduada en Salud: Mente Cuerpo Familia en el ICFT. Formada en Chamanismo Iniciático
+                                desde el 2012 en Inti Waka, Córdoba. Graduada en el seminario intensivo acompañar al
+                                buen Morir, en el Centro transpersonal de Buenos Aires. Docente en el ICFT.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 card">
+                        <div class="row">
+                            <h4> Lic. Karina Alonso</h4>
+                        </div>
+                        <div class="row">
+                            <img src="img/Staff/Karina.jpg" alt="">
+                        </div>
+                        <div class="row descripcion">
+                            <p>Lic. y Prof. en Psicopedagogía y Ciencias de la Educación. Desarrolla su actividad
+                                profesional en el ámbito privado y público en tareas clínico-asistenciales y
+                                preventivo-comunitarias. Formada en Crianza y Pedagogía Sistémica. Diplomada en Apego y
+                                Vínculos. Formada en Teoría Trifocal del Trauma. Integrante del grupo de acompañamiento
+                                a profesionales de la salud coordinado en ICFT por la Dra. Verónica Molina durante la
+                                pandemia por Covid 19.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 card">
+                        <div class="row">
+                            <h4> Lic. Norma Iglesias</h4>
+                        </div>
+                        <div class="row">
+                            <img src="img/Staff/Norma.jpg" alt="">
+                        </div>
+                        <div class="row descripcion">
+                            <p>Licenciada en Psicología, Psicoterapeuta integrativa formada en Psicoanálisis, Graduada
+                                en terapia sistémica y Terapia somática del Trauma. Diplomada en Consejería Terapéutica
+                                en Drogodependencia. Coordinadora y docente en el ICFT.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 card">
+                        <div class="row">
+                            <h4> Lic. Juan Mateo Aguirre</h4>
+                        </div>
+                        <div class="row">
+                            <img src="img/Staff/Juan.jpg" alt="">
+                        </div>
+                        <div class="row descripcion">
+                            <p>Licenciado en Administración y Gestión de empresas. Especializado en Trauma sistémico y
+                                Social. Terapeuta Gestalt. Coordinador y docente en el ICFT
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 card">
+                        <div class="row">
+                            <h4>Lic Maria Eva Duarte</h4>
+                        </div>
+                        <div class="row">
+                            <img src="img/Staff/Eva.jpg" alt="">
+                        </div>
+                        <div class="row descripcion">
+                            <p>Licenciada en Psicología. Especializada en trauma trifocal. Posgraduada en Cuerpo, Mente
+                                y Familia. Ingeniera ambiental. Acompañante en duelo gestacional y perinatal y
+                                actualmente acompañante en el buen morir.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 card">
+                        <div class="row">
+                            <h4>Lic Nancy Piriz</h4>
+                        </div>
+                        <div class="row">
+                            <img src="img/Staff/Nancy.jpg" alt="">
+                        </div>
+                        <div class="row descripcion">
+                            <p>Lic. en educación (UBA). Magister en educación a distancia en la UNED de España.
+                                Posgraduada en Formación de Formadores (Universidad de Cataluña). Especialista en
+                                Didáctica. Especializada en Trauma Trifocal y en mirada sistémica de la salud.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 card">
+                        <div class="row">
+                            <h4>Lic Analía Berlot.</h4>
+                        </div>
+                        <div class="row">
+                            <img src="img/Staff/Analía.jpg" alt="">
+                        </div>
+                        <div class="row descripcion">
+                            <p>Lic. en Administración de empresas. Terapeuta sistémica. Formada en Astrogenealogía y
+                                practicante de la CNV (comunicación no violenta). Desarrolla su actividad en Buenos
+                                Aires y sur del país. Posgraduada en Trauma Trifocal.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 card">
+                        <div class="row">
+                            <h4>Dr. Diego Domínguez</h4>
+                        </div>
+                        <div class="row">
+                            <img src="img/Staff/Diego.jpg" alt="">
+                        </div>
+                        <div class="row descripcion">
+                            <p>Sociólogo, Doctor en Ciencias Sociales. Investigador del CONICET. Integrante del Grupo de
+                                Ecología Política, Comunidades y Derechos, del Instituto Gino Germani, UBA
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="equipo">
+            <div class="row">
+                <div class="col-12">
+                    <p class="fade-in staff">Contamos con un equipo con experiencia y profesionalismo, continuamente
+                        capacitado, con un
+                        enfoque integral que se compromete con un acompañamiento respetuoso, responsable y ético</p>
+                    <a href="staf.html" class="btn">Conocenos</a>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <!-- Formulario de contacto -->
+            <div class="row">
+                <div class="col-12 contacto">
+                    <p>Mas información &emsp;<a href="form.html" target="_blank" class="btn">Contacto</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fix-bottom">
+        <div class="row m-0">
+            <div class="col-4 text-start">
+                <i class="fa-solid fa-house"></i>&ensp; Blanco Encalada 2138<br>Ciudad Autónoma de Buenos Aires<br>
+                <i class="fa-solid fa-phone"></i>&ensp;Consultas +54 9 11 2677-5593<br>
+                <i class="fa-brands fa-instagram"></i>&ensp;<i class="fa-brands fa-facebook"></i>&ensp;<i
+                    class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="col-4 mb-0">
+                <span class="text-center ">&copy 2024 - Todos los derechos reservados</span>
+            </div>
+            <div class="col-4 logof">
+                <img src="img/logo trauma blanco.png" alt="">
+            </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
