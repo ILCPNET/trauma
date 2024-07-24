@@ -9,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <style>
     /* body,
@@ -180,7 +181,7 @@
     .staff {
       font-variant: small-caps;
       font-size: 1.2rem;
-      text-align: start;
+      text-align: center;
     }
 
     .logof img {
@@ -361,10 +362,10 @@
     <section id="equipo">
       <div class="row">
         <div class="col-12">
-          <p class="fade-in staff">Contamos con un equipo con experiencia y profesionalismo, continuamente capacitado,
-            con un
-            enfoque integral que se compromete con un acompañamiento respetuoso, responsable y ético</p>
-          <a href="staf.html" class="btn">Conocenos</a>
+          <p class="fade-in staff ms-4 me-4 ">Contamos con un equipo comprometido, con un enfoque integral, con experiencia y profesionalismo, continuamente capacitado,
+            responsable y ético</p>
+            <img src="img/Foto de Karina Alonso (1).jpg" alt="">
+            <a href="staf.html" class="btn mt-3">Conocenos</a>
         </div>
       </div>
     </section>
@@ -399,6 +400,11 @@
 
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const textToType = document.getElementById('previa').textContent;
