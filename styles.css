@@ -16,7 +16,7 @@
    flex-direction: row;
    align-items: center;
    justify-content: space-around;
-   
+
  }
 
  header img {
@@ -37,7 +37,7 @@
    width: 100%;
    background-color: white;
    color: black;
-  
+
  }
 
  .container-fluid {
@@ -51,7 +51,7 @@
  } */
  .nav-item {
    align-items: center;
-   
+
  }
 
  .nav-item a {
@@ -69,7 +69,7 @@
    border-radius: 3px;
    color: white;
  }
- 
+
  .dropdown-menu {
    display: none;
    list-style: none;
@@ -97,12 +97,14 @@
  }
 
  .dropdown-menu .dropdown-item:hover {
-  background-color: #f74121b6;
+   background-color: #f74121b6;
  }
- .active{
-  color: #ed6d4a !important;
-  background-color: inherit !important;
-}
+
+ .active {
+   color: #ed6d4a !important;
+   background-color: inherit !important;
+ }
+
  /* Estilos para secciones */
 
  #inicio {
@@ -167,11 +169,15 @@
  }
 
  .btn {
-   background-color: #f74121ee !important;
-   color: white !important;
+   background-color: #C3E5D2 !important;
+   color: #005B96 !important;
    width: 200px;
    border-radius: 8px !important;
    font-variant: small-caps;
+ }
+
+ a {
+   color: #4CAF50;
  }
 
  label {
