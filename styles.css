@@ -228,15 +228,16 @@
  }
 
  #cursos {
-   box-shadow: none;
+  padding: 0 15vw 0 18vw;
 
  }
 
  .curso {
    font-variant: small-caps;
    font-family: "Montserrat", sans-serif;
-   font-size: 1rem;
-
+   /* font-size: 1rem; */
+   height: 100%;
+   
  }
 
 

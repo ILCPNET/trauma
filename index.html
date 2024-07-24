@@ -44,19 +44,22 @@
       align-items: center;
       justify-content: space-between;
     }
-    .imagen1{
+
+    .imagen1 {
       order: 2;
       margin-left: auto;
     }
-    .text{
+
+    .text {
       order: 1;
     }
+
     .slide {
       width: 100%;
       height: 100%;
       display: flex;
       position: relative;
-      
+
     }
 
     .imagen {
@@ -103,7 +106,7 @@
     }
 
     .indicator.active {
-      background-color:rgb(51, 51, 51) !important;
+      background-color: rgb(51, 51, 51) !important;
     }
 
     #veronica {
@@ -146,15 +149,24 @@
     }
 
     .tarjeta {
-      width: 30vw;
+      max-width: 25vw;
       height: 35vw;
-      margin-left: 10vw;
+      /* margin-left: 10vw; */
+      max-height: 35vw;
+      
     }
 
     .tarjeta .img {
       width: 100%;
       padding: 0;
 
+    }
+
+    .tarjeta p {
+      font-variant: none;
+      font-weight: 300;
+      font-size: 0.9rem;
+      padding: 5px;
     }
 
     #prof {
@@ -177,7 +189,9 @@
       padding: 0;
       margin: 0;
     }
-
+    .cursos{
+      height: 500px;
+    }
     .staff {
       font-variant: small-caps;
       font-size: 1.2rem;
@@ -224,13 +238,13 @@
               <a class="nav-link" href="#">Nosotros</a>
               <ul class="dropdown-menu">
                 <li>
-                  <a href="LineaD.html" class="dropdown-item">Linea de Investigacion</a>
-                </li>
-                <li>
                   <a href="DraVMolina.html" class="dropdown-item">Dra. Veronica Molina</a>
                 </li>
                 <li>
                   <a href="staf.html" class="dropdown-item">Nuestro Staff</a>
+                </li>
+                <li>
+                  <a href="refer.html" class="dropdown-item">Referentes</a>
                 </li>
               </ul>
             </li>
@@ -299,7 +313,7 @@
           <img class="" src="img/DraVeronicaMolna/dra-veronica-molina-2.jpg" alt="">
         </div>
         <div class="col-12 col-md-6 text">
-          <h3>Dra. Verónica Molina</h3>
+          <h3 class="mt-3">Dra. Verónica Molina</h3>
 
           <p>Médica Cardióloga. Psicoterapeuta integrativa
             Docente, investigadora. Fundadora de ICFT espacio de asistencia, formación e investigación en psicoterapia
@@ -315,34 +329,38 @@
     </section>
 
     <section id="cursos">
-      <div class="row ms-4 me-4">
+      <div class="row cursos">
         <div class="col-12 col-md-6 curso">
           <div class="row tarjeta">
-            <p>Posgrado en Salud</p>
+            <h4>Posgrado en Salud</h4>
             <div class="col-12 m-0 p-0">
               <a href="posgrado.html">
                 <img src="img/cursofreepik.png" alt="" class="img">
 
               </a>
               <p class="bg-dark text-white">
-                Nuestro posgrado en salud consta de blablabla bblalballa</p>
+                Esta propuesta se compone de siete seminarios de dos meses de duración cada uno. Los seminarios se
+                pueden tomar de manera individual o en conjunto como parte del Posgrado. No hay un orden establecido
+                para la toma de los seminarios, ya que la formación es circular.</p>
               <a href="posgrado.html" class="btn">Ver mas</a>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-6 curso">
           <div class="row tarjeta">
-            <p>Abordaje Trifocal del Trauma</p>
+            <h5>Abordaje Trifocal del Trauma</h5>
             <div class="col-12 m-0 p-0">
               <a href="#">
                 <img src="img/cursofreepik1.png" alt="" class="img">
               </a>
-              <p class="bg-dark text-white">
-                Nuestro posgrado en salud consta de blablabla bblalballa</p>
+              <p class="bg-dark pb-5 text-white">
+                Modelo teórico clínico integrativo desarrollado para el diagnóstico y tratamiento de experiencias
+                traumáticas en sus dimensiones individual, sistémica y colectiva. </p>
               <a href="posgrado.html" class="btn">Ver mas</a>
             </div>
           </div>
         </div>
+      </div>
     </section>
     <section id="prof">
       <div class="row">
@@ -362,10 +380,10 @@
     <section id="equipo">
       <div class="row">
         <div class="col-12">
-          <p class="fade-in staff ms-4 me-4 ">Contamos con un equipo comprometido, con un enfoque integral, con experiencia y profesionalismo, continuamente capacitado,
-            responsable y ético</p>
-            <img src="img/Foto de Karina Alonso (1).jpg" alt="">
-            <a href="staf.html" class="btn mt-3">Conocenos</a>
+          <p class="fade-in staff ms-4 me-4">Contamos con un equipo con enfoque integral, comprometido, con
+            experiencia y profesionalismo, continuamente capacitado, responsable y ético</p>
+          <img src="img/Foto de Karina Alonso (1).jpg" alt="">
+          <a href="staf.html" class="btn mt-3">Conocenos</a>
         </div>
       </div>
     </section>
@@ -404,7 +422,7 @@
   <script>
     new WOW().init();
   </script>
-  
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const textToType = document.getElementById('previa').textContent;
