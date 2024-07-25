@@ -2,116 +2,270 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo ScrollReveal</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Internacional de Psicotrauma y Salud</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
 
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
+    .contacto{
+      margin-top: 10vw;
+    }
+    .logof img {
+      width: 10vw;
+      height: auto;
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+    /* Ef fade - in*/
+    .fade-in {
+      opacity: 0;
+      animation: fade-in 2s forwards;
+    }
 
-        .form-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            padding: 20px;
-        }
-
-        .form-box {
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            width: 100%;
-        }
-
-        .form-box h2 {
-            margin-bottom: 20px;
-            color: #006400;
-            /* Verde oscuro */
-            text-align: center;
-        }
-
-        .form-box label {
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .form-box input,
-        .form-box textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1em;
-        }
-
-        .form-box button {
-            width: 100%;
-            padding: 15px;
-            background-color: #006400;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-
-        .form-box button:hover {
-            background-color: #004d00;
-        }
-    </style>
+    @keyframes fade-in {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div class="form-container">
-        <div class="form-box">
-            <h2>Contáctanos</h2>
+
+  <header>
+    <nav class="navbar navbar-expand-lg fade-in fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo trauma.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">Nosotros</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="DraVMolina.html" class="dropdown-item">Dra. Veronica Molina</a>
+                </li>
+                <li>
+                  <a href="staf.html" class="dropdown-item">Nuestro Staff</a>
+                </li>
+                <li>
+                  <a href="refer.html" class="dropdown-item">Referentes</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Formacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Linea de Investigacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Asistencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recursos Gratuitos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+   
+    <section id="contacto">
+      <!-- Formulario de contacto -->
+      <div class="row">
+        <div class="col-12 contacto">
+          
             <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="phone" class="form-label">Teléfono</label>
-                    <input type="tel" class="form-control" id="phone" name="phone" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+              <div class="mb-1">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+    
+              <div class="mb-1">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+    
+              <div class="mb-1">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                <button type="submit" class="btn mt-1">Enviar</button>
+              </div>
             </form>
         </div>
-    </div>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        ScrollReveal().reveal('.form-container', {
-            duration: 1000,
-            origin: 'bottom',
-            distance: '50px'
+    </section>
+    <!-- <section id="galeria">
+      Galería de imágenes o proyectos destacados
+    </section> -->
+  </main>
+
+  <footer class="fix-bottom">
+    <div class="row m-0">
+      <div class="col-4 text-start">
+        <i class="fa-solid fa-house"></i>&ensp; Blanco Encalada 2138. Ciudad Autónoma de Buenos Aires<br>
+        <i class="fa-solid fa-phone"></i>&ensp;Consultas +54 9 11 2677-5593<br>
+        <i class="fa-brands fa-instagram"></i>&ensp;<i class="fa-brands fa-facebook"></i>&ensp;<i
+          class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="col-4 copy">
+        <span class="text-center">&copy 2024 - Todos los derechos reservados</span>
+      </div>
+      <div class="col-4 logof">
+        <img src="img/logo trauma blanco.png" alt="">
+      </div>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const textToType = document.getElementById('previa').textContent;
+      const typedContent = document.getElementById('pres');
+      let index = 0;
+      const typingSpeed = 60; // Velocidad de escritura en milisegundos
+
+      function type() {
+        if (index < textToType.length) {
+          typedContent.textContent += textToType.charAt(index);
+          index++;
+          requestAnimationFrame(type);
+        }
+      }
+
+      function startTyping() {
+        setTimeout(type, typingSpeed);
+      }
+
+      startTyping();
+    });
+  </script>
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const indicators = document.querySelectorAll('.indicator');
+
+    function showSlide(index) {
+      const slideWidth = slides[0].clientWidth;
+      document.querySelector('.carousel-slide').style.transform = `translateX(-${index * slideWidth}px)`;
+      indicators.forEach(indicator => indicator.classList.remove('active'));
+      indicators[index].classList.add('active');
+
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[index].classList.add('active');
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    function currentSlide(index) {
+      currentIndex = index;
+      showSlide(currentIndex);
+    }
+
+    setInterval(nextSlide, 12000);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      showSlide(currentIndex);
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const carousel = document.querySelector('.carousel');
+      const prevButton = document.querySelector('.carousel-button.prev');
+      const nextButton = document.querySelector('.carousel-button.next');
+      const images = document.querySelectorAll('.carousel img');
+      const indicators = document.querySelectorAll('.carousel-indicators button');
+      let currentIndex = 0;
+      let autoSlideInterval;
+
+      function updateCarousel() {
+        const image = images[currentIndex];
+        carousel.scrollTo({
+          left: image.offsetLeft - (carousel.offsetWidth - image.offsetWidth) / 2,
+          behavior: 'smooth'
         });
-    </script>
+        indicators.forEach((indicator, index) => {
+          indicator.classList.toggle('active', index === currentIndex);
+        });
+      }
+
+      function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+          currentIndex = (currentIndex + 1) % images.length;
+          updateCarousel();
+        }, 5000);
+      }
+
+      function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+      }
+
+      prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateCarousel();
+      });
+
+      nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel();
+      });
+
+      indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+          currentIndex = index;
+          updateCarousel();
+        });
+      });
+
+      carousel.addEventListener('mouseenter', stopAutoSlide);
+      carousel.addEventListener('mouseleave', startAutoSlide);
+
+      updateCarousel();
+      startAutoSlide();
+    });
+  </script>
+  <script>
+    ScrollReveal().reveal('#cursos', { duration: 1000, origin: 'bottom', distance: '50px' })
+    ScrollReveal().reveal('#carousel', { duration: 1000, origin: 'bottom', distance: '50px' })
+    ScrollReveal().reveal('#contacto', { duration: 1000, origin: 'bottom', distance: '50px' })
+    ScrollReveal().reveal('#text', { duration: 1500, origin: 'left', distance: '100px' })
+
+  </script>
 </body>
 
 </html>

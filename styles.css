@@ -347,3 +347,11 @@
   font-variant: small-caps;
   font-weight: 600;
 }
+footer{
+  font-size: 0.8rem;
+  text-align: center;
+  
+}
+.copy{
+  align-content: flex-end ;
+}
