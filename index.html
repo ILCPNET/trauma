@@ -68,15 +68,13 @@
     }
 
     .slide .text {
-      width: 40%;
+      width: 60%;
       text-align: justify;
       display: flex;
       padding: 20px;
-      text-align: justify;
       font-family: "Montserrat", sans-serif !important;
       font-size: 1.1rem;
       font-weight: 400;
-      align-self: center;
       opacity: 0;
       transition: opacity 2s ease-in;
       font-variant: small-caps;
@@ -170,15 +168,16 @@
     }
 
     #prof {
-      background-color: #4CAF50;
+      background-color: #AEDFF7;
       padding: 0 !important;
 
     }
 
     .prof {
       font-family: "Montserrat", sans-serif;
-      font-weight: 400;
-      color: white;
+      font-weight: 500;
+      font-variant: small-caps;
+      color: rgb(31, 31, 31);
       padding: 6vw;
       padding-bottom: 0 !important;
     }
@@ -393,7 +392,24 @@
       <!-- Formulario de contacto -->
       <div class="row">
         <div class="col-12 contacto">
-          <p>Mas información &emsp;<a href="form.html" target="_blank" class="btn">Contacto</a></p>
+          
+            <form>
+              <div class="mb-1">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+    
+              <div class="mb-1">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+    
+              <div class="mb-1">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                <button type="submit" class="btn mt-1">Enviar</button>
+              </div>
+            </form>
         </div>
       </div>
 
