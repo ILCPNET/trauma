@@ -23,17 +23,15 @@
         h3 {
             font-weight: 700;
             color: #1f6ea3;
+            text-align: left;
         }
 
         .text {
-            width: 50%;
             color: black;
             /* display: flex; */
-            margin-top: 5vw;
-            text-align: center;
-            font-family: "Barlow", sans-serif;
-            font-size: 1rem;
-            font-variant: small-caps;
+            text-align: justify;
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.9rem;
             /* text-shadow: 2px 0 0 black ; */
             font-weight: 500;
             /* border: 2px solid red; */
@@ -43,27 +41,21 @@
             margin: 10vw 15vw 0 15vw;
         }
 
-        .card {
-            max-width: 300px;
-        }
-
-        .card p {
-            font-size: 0.9rem;
-        }
-
-        .card img {
-            height: 300px;
-            width: auto;
+        .referentes img{
+            width: 100%;
+            height: auto;
+            max-height: 300px;
             object-fit: cover;
         }
-
+        
         .logof img {
             width: 10vw;
             height: auto;
             margin-right: 10px;
             margin-bottom: 0;
         }
-        .desc{
+
+        .desc {
             text-align: justify;
             font-size: 1rem;
             padding: 5px;
@@ -143,11 +135,14 @@
                 <p class="desc">En el campo del trauma psicológico, figuras destacadas han marcado pautas cruciales. Sus
                     investigaciones y enfoques terapéuticos han revolucionado nuestra comprensión y tratamiento del
                     trauma, proporcionando herramientas fundamentales para la sanación emocional.</p>
-                <div class="row">
-                    <div class="col-12 col-md-4 card">
+                <div class="row mb-2">
+                    <div class="col-12 col-md-4">
                         <img src="img/ref/freud.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
                         <h3>Sigmund Freud</h3>
-                        <p>(6 de mayo de 1856-Londres, 23 de septiembre de 1939) fue un médico neurólogo austríaco de
+                        <p class="text">(6 de mayo de 1856-Londres, 23 de septiembre de 1939) fue un médico neurólogo
+                            austríaco de
                             origen
                             judío, padre del psicoanálisis y una de las mayores figuras intelectuales del siglo XX.
                             Creador
@@ -155,30 +150,44 @@
                             en
                             las ciencias médicas: la psicología y psicoterapia.</p>
                     </div>
-                    <div class="col-12 col-md-4 card">
+                </div>
+                <div class="row mb-2">
+                    <div class="col-12 col-md-4">
                         <img src="img/ref/husserl.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
                         <h3>Edmund Husserl</h3>
-                        <p>(República Checa, 1859 - Friburgo, Alemania, 1938) Filósofo y lógico alemán. Estudió física,
+                        <p class="text">(República Checa, 1859 - Friburgo, Alemania, 1938) Filósofo y lógico alemán.
+                            Estudió
+                            física,
                             matemáticas, astronomía y filosofía en las universidades de Leipzig, Berlín y Viena.
                             Creador de la fenomenología.
                             “Meditaciones cartesianas” fue uno de sus libros publicados donde presenta una
                             “introducción” de la fenomenología.
                         </p>
                     </div>
-                    <div class="col-12 col-md-4 card">
+                </div>
+                <div class="row mb-2">
+                    <div class="col-12 col-md-4">
                         <img src="img/ref/jung.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
                         <h3>Carl Gustav Jung </h3>
-                        <p>(Suiza; 26 de julio -6 de junio de 1961) fue un médico psiquiatra, psicólogo y ensayista
+                        <p class="text">(Suiza; 26 de julio -6 de junio de 1961) fue un médico psiquiatra, psicólogo y
+                            ensayista
                             suizo, figura clave en la etapa inicial del psicoanálisis; posteriormente, fundador de la
                             escuela de psicología analítica, también llamada psicología de los complejos y psicología
                             profunda.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-4 card">
+                <div class="row mb-2">
+                    <div class="col-12 col-md-4">
                         <img src="img/ref/LevineP_1.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
                         <h3>Peter A. Levine</h3>
-                        <p>Nació en 1942 en Estados Unidos. PHD, Doctor en biofísica médica y psicología. Es el
+                        <p class="text">Nació en 1942 en Estados Unidos. PHD, Doctor en biofísica médica y psicología.
+                            Es el
                             desarrollador de Somatic Experiencing®, un enfoque basado en la conciencia corporal para
                             curar el trauma y el fundador del Somatic Experiencing Trauma Institute.
                             Autor del libro “Curar el trauma” traducido a veintidós idiomas.
@@ -191,10 +200,15 @@
                             bienestar” y “Libre de Dolor”.
                         </p>
                     </div>
-                    <div class="col-12 col-md-4 card">
+                </div>
+                <div class="row mb-2">
+                    <div class="col-12 col-md-4">
                         <img src="img/ref/stephen-porges-300x300.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
                         <h3>Stephen W. Porges</h3>
-                        <p>Nacido en 1945, es un psicólogo y neurocientífico estadounidense. Es profesor de Psiquiatría
+                        <p class="text">Nacido en 1945, es un psicólogo y neurocientífico estadounidense. Es profesor de
+                            Psiquiatría
                             en la Universidad de Carolina del Norte. Director del Grupo de Investigación sobre Estrés
                             Traumático del Instituto Kinsey en la Universidad de Indiana en Bloomington. Anteriormente,
                             fue profesor en la Universidad de Illinois, Chicago, donde fue director del Centro
@@ -204,38 +218,56 @@
                             parasimpático, en la regulación de las respuestas al estrés,
                         </p>
                     </div>
-                    <div class="col-12 col-md-4 card">
+                </div>
+                <div class="row mb-2">
+                    <div class="col-12 col-md-4">
                         <img src="img/ref/eric-berne-300x300.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
                         <h3>Eric Berne</h3>
-                        <p>(1910-1970), médico psiquiatra canadiense, psicoanalista, creador de la teoría del Análisis
+                        <p class="text">(1910-1970), médico psiquiatra canadiense, psicoanalista, creador de la teoría
+                            del Análisis
                             Transaccional como forma de explicar el comportamiento humano. Berne mapeó las relaciones
                             interpersonales con tres estados del yo de los individuos involucrados: el estado Padre,
                             Adulto y Niño y luego investigó las comunicaciones entre individuos en función del estado de
                             cada uno.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-4 card">
+                <div class="row mb-2">
+                    <div class="col-12 col-md-4">
                         <img src="img/ref/virsatir.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
                         <h3>Virginia Satir</h3>
-                        <p>(1916 - 1988) fue una notable autora, trabajadora social y psicoterapeuta estadounidense,
+                        <p class="text">(1916 - 1988) fue una notable autora, trabajadora social y psicoterapeuta
+                            estadounidense,
                             conocida especialmente por su enfoque de terapia familiar. Sus libros más famosos en idioma
                             español son “Terapia familiar paso a paso”, “En Contacto Íntimo: Cómo relacionarse con uno
                             mismo” y “Nuevas Relaciones Humanas en el Núcleo Familiar”.</p>
                     </div>
-                    <div class="col-12 col-md-4 card">
+                </div>
+                <div class="row mb-2">
+                    <div class="col-12 col-md-4">
                         <img src="img/ref/hausner.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
                         <h3>Stephan Hausner</h3>
-                        <p>es médico naturópata, homeópata, fisioenergético, osteópata y profesor de naturopatía en
+                        <p class="text">es médico naturópata, homeópata, fisioenergético, osteópata y profesor de
+                            naturopatía en
                             varias universidades alemanas. Está formado en diversos métodos de psicoterapia humanística,
                             especializado en el abordaje de la enfermedad a través del método de Constelaciones
                             Familiares y desde 1995 dirige regularmente talleres en más de 45 países en todos los
                             continentes. Es autor del libro " Aunque me cueste la vida”</p>
                     </div>
-                    <div class="col-12 col-md-4 card">
+                </div>
+                <div class="row mb-2">
+                    <div class="col-12 col-md-4">
                         <img src="img/ref/kolk.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
                         <h3>Bessel van der Kolk</h3>
-                        <p>Nacido en 1943, es un psiquiatra, investigador y educador holandés. Desde la década de 1970
+                        <p class="text">Nacido en 1943, es un psiquiatra, investigador y educador holandés. Desde la
+                            década de 1970
                             su investigación se centró en el área del estrés postraumático. Es autor del best seller “El
                             cuerpo lleva la cuenta” y 'Estrés traumático: los efectos de una experiencia abrumadora en
                             la mente, el cuerpo y la sociedad'.
@@ -250,11 +282,14 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-4 card">
+                <div class="row mb-2">
+                    <div class="col-12 col-md-4">
                         <img src="img/ref/cyrulnik.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
                         <h3>Boris Cyrulnik</h3>
-                        <p>Nacido en Burdeos, Francia el 26 de julio de 1937, es neurólogo, psiquiatra, psicoanalista y
+                        <p class="text">Nacido en Burdeos, Francia el 26 de julio de 1937, es neurólogo, psiquiatra,
+                            psicoanalista y
                             etólogo.
                             Dedicó su carrera sobre todo al tratamiento de niños traumatizados. Sus trabajos le han
                             permitido desarrollar el concepto de la resiliencia, como un renacer del sufrimiento. La
@@ -264,10 +299,15 @@
                             destino».
                         </p>
                     </div>
-                    <div class="col-12 col-md-4 card">
+                </div>
+                <div class="row mb-2">
+                    <div class="col-12 col-md-4">
                         <img src="img/ref/dana.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
                         <h3>Deb Dana</h3>
-                        <p>Es una destacada clínica, consultora especializada en trauma complejo. Su enfoque se centra
+                        <p class="text">Es una destacada clínica, consultora especializada en trauma complejo. Su
+                            enfoque se centra
                             en aplicar la Teoría Polivagal para entender y abordar el impacto del trauma, así como en
                             desarrollar estrategias que respeten el papel del sistema nervioso autónomo.
                             Es la creadora de la serie de formación clínica "Rhythm of Regulation" (Enlazar el Ritmo de
@@ -281,10 +321,15 @@
                             (2023)
                         </p>
                     </div>
-                    <div class="col-12 col-md-4 card">
+                </div>
+                <div class="row mb-2">
+                    <div class="col-12 col-md-4">
                         <img src="img/ref/mate.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
                         <h3>Gabor Maté</h3>
-                        <p>Nació en Budapest, Hungría, en 1944 y emigró a Canadá con su familia durante la Revolución
+                        <p class="text">Nació en Budapest, Hungría, en 1944 y emigró a Canadá con su familia durante la
+                            Revolución
                             Húngara de 1956.
                             Es médico y escritor y se especializa en el estudio y tratamiento de las adicciones,
                             trastorno por déficit de atención y experiencias tempranas en la infancia. Ha desarrollado
@@ -297,19 +342,26 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-4 card">
+                <div class="row mb-2">
+                    <div class="col-12 col-md-4">
                         <img src="img/ref/ruppert.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
                         <h3>Franz Ruppert</h3>
-                        <p>psicólogo y psicoterapeuta alemán, es profesor de psicología en Múnich y psicoterapeuta. Es
+                        <p class="text">psicólogo y psicoterapeuta alemán, es profesor de psicología en Múnich y psicoterapeuta. Es
                             autor de referencia y prestigio internacional en la investigación de trauma. Sus libros se
                             han traducido al castellano (3 en Herder), inglés, brasileño, ruso, italiano, polaco,
                             rumano, checo, turco, noruego y neerlandés. </p>
                     </div>
-                    <div class="col-12 col-md-4 card">
+                </div>
+                <div class="row mb-2">
+                    <div class="col-12 col-md-4">
                         <img src="img/ref/BERTHELLINGER.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
                         <h3>Bert Hellinger </h3>
-                        <p>(1925 - 2019) estudió filosofía, teología y pedagogía. Trabajó durante 16 años como misionero
+                        <p class="text">(1925 - 2019) estudió filosofía, teología y pedagogía. Trabajó durante 16 años
+                            como misionero
                             de una orden católica con los zulúes en Sudáfrica. Allí, se conectó con el conocimiento
                             ancestral nativo de estas tribus y su particular acercamiento a las dinámicas sociales.
                             Posteriormente, se convirtió en psicoanalista y completó diversas formaciones en terapia
@@ -320,10 +372,15 @@
                             legales, educativos y en el área de la salud y la comunicación.
                         </p>
                     </div>
-                    <div class="col-12 col-md-4 card">
+                </div>
+                <div class="row mb-2">
+                    <div class="col-12 col-md-4">
                         <img src="img/ref/hubl.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
                         <h3>Thomas Hübl</h3>
-                        <p>es un reconocido profesor, autor y facilitador internacional que trabaja en la complejidad de
+                        <p class="text">es un reconocido profesor, autor y facilitador internacional que trabaja en la
+                            complejidad de
                             los sistemas y el cambio cultural integrando las ideas centrales de las grandes tradiciones
                             de sabiduría y misticismo con los descubrimientos de la ciencia.
 
@@ -349,20 +406,20 @@
 
     <footer class="fix-bottom">
         <div class="row m-0">
-          <div class="col-4 text-start">
-            <i class="fa-solid fa-house"></i>&ensp; Blanco Encalada 2138. Ciudad Autónoma de Buenos Aires<br>
-            <i class="fa-solid fa-phone"></i>&ensp;Consultas +54 9 11 2677-5593<br>
-            <i class="fa-brands fa-instagram"></i>&ensp;<i class="fa-brands fa-facebook"></i>&ensp;<i
-              class="fa-brands fa-twitter"></i>
-          </div>
-          <div class="col-4 copy">
-            <span class="text-center">&copy 2024 - Todos los derechos reservados</span>
-          </div>
-          <div class="col-4 logof">
-            <img src="img/logo trauma blanco.png" alt="">
-          </div>
-    
-      </footer>
+            <div class="col-4 text-start">
+                <i class="fa-solid fa-house"></i>&ensp; Blanco Encalada 2138. Ciudad Autónoma de Buenos Aires<br>
+                <i class="fa-solid fa-phone"></i>&ensp;Consultas +54 9 11 2677-5593<br>
+                <i class="fa-brands fa-instagram"></i>&ensp;<i class="fa-brands fa-facebook"></i>&ensp;<i
+                    class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="col-4 copy">
+                <span class="text-center">&copy 2024 - Todos los derechos reservados</span>
+            </div>
+            <div class="col-4 logof">
+                <img src="img/logo trauma blanco.png" alt="">
+            </div>
+
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 

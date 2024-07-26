@@ -28,6 +28,12 @@
       margin-right: 10px;
       margin-bottom: 0;
     }
+    .logoc {
+      width: 15vw;
+      display: block;
+      margin-top: 10vw;
+      margin-left: 15vw;
+    }
     /* Ef fade - in*/
     .fade-in {
       opacity: 0;
@@ -99,26 +105,29 @@
    
     <section id="contacto">
       <!-- Formulario de contacto -->
-      <div class="row">
-        <div class="col-12 contacto">
-          
-            <form>
-              <div class="mb-1">
-                <label for="name" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-              </div>
-    
-              <div class="mb-1">
-                <label for="email" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-              </div>
-    
-              <div class="mb-1">
-                <label for="message" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                <button type="submit" class="btn mt-1">Enviar</button>
-              </div>
-            </form>
+      <div class="row fade-in">
+        <div class="col-12 col-md-6">
+          <img src="img/logo trauma negro.png" class="logoc" alt="">
+        </div>
+        <div class="col-12 col-md-4 contacto">
+
+          <form>
+            <div class="mb-1">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <div class="mb-1">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-1">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              <button type="submit" class="btn mt-1">Enviar</button>
+            </div>
+          </form>
         </div>
       </div>
 
